@@ -13,7 +13,7 @@ function newQuote() {
   } else {
     authorText.textContent = quote.author;
   }
-  if (quoteText.length > 50) {
+  if (quoteText.length > 100) {
     quoteText.classList.add(`long-quote`);
   } else {
     quoteText.classList.remove(`long-quote`);
@@ -39,5 +39,12 @@ fetch("https://qapi.vercel.app/api/quotes")
     let quote = response.quote;
   });
 
+function tweetQuote() {
+  const twitterUrl = `https://twitter.com/intent/tweet?text=${quoteText.textContent} - ${authorText.textContent}`;
+}
+
 let buttonElement = document.querySelector("#new-quote");
 buttonElement.addEventListener("click", newQuote);
+
+let twitterButtonElement = document.querySelector("#twitter-button");
+twitterButtonElement.addEventListener("click", tweetQuote);
