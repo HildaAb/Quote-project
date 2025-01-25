@@ -10,26 +10,30 @@
       href="https://fonts.googleapis.com/css2?family=Delius&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container" id="container">
+    <div class="quote-container" id="quote-container">
       <div class="quote-text">
+        <i class="fas fa-quote-left"></i>
         <span id="quote"
           >What you are is what you have been. <br />What you`ll be is what you
-          do now."</span
+          do now.</span
         >
+        <i class="fas fa-quote-right"></i>
       </div>
       <div class="quote-author">
         <span id="author">Buddha</span>
       </div>
-      <div class="butten-container">
-        <butten
-          class="twiter-button"
-          id="twiter-button"
-          title="Tweet this!"
-        ></butten>
-        <butten id="new-quote">New Quote</butten>
+      <div class="button-container">
+        <button class="twitter-button" id="twitter-button" title="Tweet this!">
+          <i class="fab fa-twitter"></i>
+        </button>
+        <button id="new-quote">New Quote</button>
       </div>
     </div>
     <script src="app.js"></script>
