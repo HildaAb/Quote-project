@@ -14,7 +14,7 @@ body {
 .quote-container {
   width: auto;
   max-width: 900px;
-  max-height: 300px;
+  min-height: 300px;
   padding: 10px 20px;
   border-radius: 10px;
   background-color: rgb(235, 228, 244, 0.4);
@@ -88,5 +88,7 @@ button:active {
 }
 
 @media (max-width: 400px) {
-    .quote-container {
-        min-height: 300px;
+  .quote-container {
+    min-height: 300px;
+  }
+}
